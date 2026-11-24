@@ -144,8 +144,6 @@ ui <- fluidPage(
           p("ETS and ARIMA use automatic specification selection. TSLM uses a specified trend-plus-season model. Training metrics use fitted values; validation forecasts are made once from the training endpoint, without updating from held-out observations."),
           p("Training metrics exclude imputed targets. Forecast intervals are model-based 95% prediction intervals and do not account for imputation or model-selection uncertainty. Negative lower limits are retained rather than silently clipped."),
           p("Date controls include whole months. Future forecasts start after the selected data window, not necessarily after December 1994."),
-          h3("Reproduce the initial comparison"),
-          p("Select Red and sparkling, January 1980 through December 1994, all three models, 12 validation months, and a 12-month future horizon."),
           h3("Acknowledgments"),
           p("App code drafted and revised with OpenAI ChatGPT/Codex assistance. The author is responsible for reviewing the methods and interpreting the results."),
           tags$a(href = "https://fable.tidyverts.org/", "fable documentation"), tags$br(),
